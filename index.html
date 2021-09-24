@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./stlyle.css" type="text/css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<nav>
+			<div class="container nav">
+				<div class="logo">
+					<img src="./images/logo.png" alt="Logo" width="160" />
+				</div>
+				<div class="menu" onClick="handleMenu()">
+					<div id="bar-1" class="bar"></div>
+					<div id="bar-2" class="bar"></div>
+					<div id="bar-3" class="bar"></div>
+				</div>
+				<ul class="nav-ul">
+					<li><a href="#">Products & Services</a></li>
+					<li><a href="#">Partnerships</a></li>
+					<li><a href="#">Insights</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#" id="contact-btn">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+		<main>
+			<div class="container">
+				<section class="content">
+					<img
+						src="./images/Green leaf icon.png"
+						alt="Green leaf icon"
+						width="200"
+					/>
+					<h4>Innovative Non-Toxic Crop Management Technologies</h4>
+					<h2>Transforming</h2>
+					<h2>How we grow</h2>
+					<h5>Better for plans. Soil. Earth. <span>Us.</span></h5>
+				</section>
+			</div>
+		</main>
+		<footer class="footer-full">
+			<div class="container footer">
+				<div class="footer-left">
+					<div class="newsletter">
+						<form action="">
+							<label for="email">Newsletter and Product Updates</label>
+							<br />
+							<input type="email" name="email" id="email" placeholder="Email" />
+							<input type="submit" value="Submit" id="contact-btn" />
+						</form>
+					</div>
+					<div class="terms">
+						<img src="./images/logo.png" alt="logo" width="200" />
+						<p><span>Terms & Conditions</span> | <span>Privacy Policy</span></p>
+						<p>Copyright &copy; 2021 Terra Vera Corp. All rights reserved.</p>
+					</div>
+				</div>
+				<div class="footer-right">
+					<div class="right-cont">
+						<div class="site-map">
+							<h4>Site Map</h4>
+							<ul>
+								<li><a href="#">HOME</a></li>
+								<li><a href="#">ABOUT</a></li>
+								<li><a href="#">PRODUCTS & SERVICES</a></li>
+								<li><a href="#">PARTNERSHIPS</a></li>
+								<li><a href="#">FAQS</a></li>
+								<li><a href="#">CASE STUDIES</a></li>
+								<li><a href="#">BLOG</a></li>
+								<li><a href="#">NEWS</a></li>
+								<li><a href="#">PODCASTS</a></li>
+								<li><a href="#">CONTACT</a></li>
+							</ul>
+						</div>
+						<div class="follow">
+							<h4>Follow Us</h4>
+							<div class="social">
+								<img src="./images/linkedin.svg" alt="Linkedin" width="35" />
+								<img src="./images/instagram.svg" alt="instagram" width="35" />
+								<img src="./images/facebook.svg" alt="facebook" width="35" />
+								<img
+									src="./images/Twitter icon_black.png"
+									alt="Twitter"
+									width="35"
+								/>
+							</div>
+							<a href="mailto:info@terravera.com">info@terravera.com</a>
+							<p>(505) 289-0642</p>
+							<p><a href="#" id="contact-btn">SHOP APPAREL</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script>
+			const handleMenu = () => {
+				const menu = document.querySelector(".menu");
+				menu.classList.toggle("change-icon");
+			};
+		</script>
+	</body>
+</html>
